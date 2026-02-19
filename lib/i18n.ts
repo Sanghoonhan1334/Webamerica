@@ -38,11 +38,43 @@ export const translations = {
       ],
     },
     contact: {
-      title: "프로젝트 문의",
+      title: "문의하기",
+      subtitle: "아직 방향이 명확하지 않아도 괜찮습니다. 함께 정리해보는 시간으로 생각해주세요.",
+      step1: {
+        question: "어떤 시장을 대상으로 준비 중이신가요?",
+        options: {
+          korea: "한국 시장",
+          latin: "중남미 시장",
+          northAmerica: "북미(미국) 시장",
+          undecided: "아직 정하지 못함",
+          other: "기타 (직접 입력)",
+        },
+      },
+      step2: {
+        question: "현재 프로젝트 단계는 어디쯤인가요?",
+        options: {
+          idea: "아이디어 단계",
+          mvp: "MVP 준비 중",
+          operating: "운영 중",
+          expansion: "해외 확장 고민 중",
+        },
+      },
+      step3: {
+        question: "프로젝트를 한 줄로 설명해주세요.",
+        placeholder: "예: 한국 시장에서 검증된 서비스를 중남미로 확장하고 싶습니다.",
+      },
       nameLabel: "이름",
       emailLabel: "이메일",
-      messageLabel: "프로젝트 내용",
-      submitButton: "상담 신청하기 >",
+      submitButton: "무료 전략 상담 신청하기 >",
+      submitting: "제출 중...",
+      success: {
+        title: "문의가 성공적으로 전송되었습니다!",
+        message: "빠른 시일 내에 연락드리겠습니다.",
+      },
+      error: {
+        title: "오류가 발생했습니다",
+        message: "다시 시도해주시거나, 직접 연락주시기 바랍니다.",
+      },
     },
     team: {
       title: "글로벌 전문 파트너 팀",
@@ -149,11 +181,43 @@ export const translations = {
       ],
     },
     contact: {
-      title: "Consulta de Proyecto",
+      title: "Consulta",
+      subtitle: "Está bien si la dirección aún no está clara. Piensa en esto como un tiempo para organizar juntos.",
+      step1: {
+        question: "¿Para qué mercado se está preparando?",
+        options: {
+          korea: "Mercado Coreano",
+          latin: "Mercado de América Latina/Central",
+          northAmerica: "Mercado de América del Norte (EE.UU.)",
+          undecided: "Aún no lo he decidido",
+          other: "Otro (escribir directamente)",
+        },
+      },
+      step2: {
+        question: "¿En qué etapa se encuentra actualmente su proyecto?",
+        options: {
+          idea: "Etapa de idea",
+          mvp: "Preparando MVP",
+          operating: "En operación",
+          expansion: "Considerando expansión internacional",
+        },
+      },
+      step3: {
+        question: "Describa su proyecto en una línea.",
+        placeholder: "Ej: Quiero expandir un servicio verificado en el mercado coreano a América Latina.",
+      },
       nameLabel: "Nombre",
       emailLabel: "Correo electrónico",
-      messageLabel: "Contenido del proyecto",
-      submitButton: "Solicitar Consulta >",
+      submitButton: "Solicitar Consultoría Estratégica Gratuita >",
+      submitting: "Enviando...",
+      success: {
+        title: "¡Consulta enviada con éxito!",
+        message: "Nos pondremos en contacto contigo pronto.",
+      },
+      error: {
+        title: "Ocurrió un error",
+        message: "Por favor, inténtalo de nuevo o contáctanos directamente.",
+      },
     },
     team: {
       title: "Equipo de Socios Expertos Globales",
@@ -260,11 +324,43 @@ export const translations = {
       ],
     },
     contact: {
-      title: "Project Inquiry",
+      title: "Inquiry",
+      subtitle: "It's okay if the direction isn't clear yet. Think of this as time to organize together.",
+      step1: {
+        question: "Which market are you preparing for?",
+        options: {
+          korea: "Korean Market",
+          latin: "Latin/Central American Market",
+          northAmerica: "North American (US) Market",
+          undecided: "Haven't decided yet",
+          other: "Other (write directly)",
+        },
+      },
+      step2: {
+        question: "What stage is your project currently at?",
+        options: {
+          idea: "Idea stage",
+          mvp: "Preparing MVP",
+          operating: "In operation",
+          expansion: "Considering international expansion",
+        },
+      },
+      step3: {
+        question: "Describe your project in one line.",
+        placeholder: "Ex: I want to expand a service verified in the Korean market to Latin America.",
+      },
       nameLabel: "Name",
       emailLabel: "Email",
-      messageLabel: "Project content",
-      submitButton: "Request Consultation >",
+      submitButton: "Request Free Strategic Consultation >",
+      submitting: "Submitting...",
+      success: {
+        title: "Inquiry sent successfully!",
+        message: "We will contact you soon.",
+      },
+      error: {
+        title: "An error occurred",
+        message: "Please try again or contact us directly.",
+      },
     },
     team: {
       title: "Global Expert Partner Team",

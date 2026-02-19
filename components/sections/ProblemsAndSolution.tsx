@@ -7,7 +7,7 @@ export default function ProblemsAndSolution() {
   
   const problems = [
     { icon: "💬", text: t.problems.items.communication },
-    { icon: "🔶", text: t.problems.items.misunderstanding },
+    { icon: "❓", text: t.problems.items.misunderstanding },
     { icon: "⏰", text: t.problems.items.delay },
     { icon: "📋", text: t.problems.items.schedule },
   ];
@@ -16,12 +16,12 @@ export default function ProblemsAndSolution() {
     {
       title: t.solution.items.pm,
       description: t.solution.items.pmDesc,
-      icon: "👤",
+      icon: "✓",
     },
     {
       title: t.solution.items.team,
       description: t.solution.items.teamDesc,
-      icon: "🌍",
+      icon: "✓",
     },
   ];
   return (
@@ -60,8 +60,8 @@ export default function ProblemsAndSolution() {
               {solutions.map((solution, index) => (
                 <div key={index} className="flex items-start gap-4">
                   {solution.icon && (
-                    <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl">{solution.icon}</span>
+                    <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-lg shadow-accentGlow">
+                      <span className="text-white font-bold text-xl">{solution.icon}</span>
                     </div>
                   )}
                   <div>
