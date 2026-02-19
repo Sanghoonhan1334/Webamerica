@@ -102,21 +102,29 @@ export default function ContactForm({
   // 성공 메시지 표시
   if (submitStatus === "success") {
     return (
-      <section id="contact" className="relative py-20 px-6 lg:px-12 overflow-hidden">
+      <section id="contact" className="relative py-24 px-6 lg:px-12 overflow-hidden">
+        {/* 강조된 배경 */}
         <div className="absolute inset-0 z-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center opacity-30 bg-surface"
-            style={{
-              backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
-              filter: "blur(2px)",
-            }}
-          />
-          <div className="absolute inset-0 bg-background/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-background" />
+          {backgroundImage && (
+            <div 
+              className="absolute inset-0 bg-cover bg-center opacity-20"
+              style={{
+                backgroundImage: `url(${backgroundImage})`,
+                filter: "blur(3px)",
+              }}
+            />
+          )}
+          <div className="absolute inset-0 bg-background/80" />
+          <div className="absolute inset-0 border-t border-b border-accent/20" />
         </div>
 
         <div className="relative z-10 container mx-auto">
           <div className="max-w-3xl mx-auto">
-            <Card className="p-8 md:p-12 text-center">
+            <Card className="p-8 md:p-12 text-center border-2 border-accent/30 shadow-2xl" style={{
+              boxShadow: "0 20px 60px rgba(59, 91, 255, 0.2), 0 8px 30px rgba(0,0,0,0.5)",
+              background: "rgba(255, 255, 255, 0.08)",
+            }}>
               <div className="py-8">
                 <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
                   <svg
@@ -163,25 +171,39 @@ export default function ContactForm({
   }
 
   return (
-    <section id="contact" className="relative py-20 px-6 lg:px-12 overflow-hidden">
-      {/* Background Image */}
+    <section id="contact" className="relative py-24 px-6 lg:px-12 overflow-hidden">
+      {/* 강조된 배경 */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30 bg-surface"
-          style={{
-            backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
-            filter: "blur(2px)",
-          }}
-        />
-        <div className="absolute inset-0 bg-background/60" />
+        {/* 그라데이션 배경 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-background" />
+        {/* 배경 이미지 (있는 경우) */}
+        {backgroundImage && (
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              filter: "blur(3px)",
+            }}
+          />
+        )}
+        {/* 오버레이 */}
+        <div className="absolute inset-0 bg-background/80" />
+        {/* 강조 효과 */}
+        <div className="absolute inset-0 border-t border-b border-accent/20" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto">
         <div className="max-w-3xl mx-auto">
-          <Card className="p-8 md:p-12">
+          {/* 강조된 카드 */}
+          <Card className="p-8 md:p-12 border-2 border-accent/30 shadow-2xl" style={{
+            boxShadow: "0 20px 60px rgba(59, 91, 255, 0.2), 0 8px 30px rgba(0,0,0,0.5)",
+            background: "rgba(255, 255, 255, 0.08)",
+          }}>
             <CardHeader className="text-center pb-8">
-              <CardTitle className="text-3xl md:text-4xl mb-4">{t.contact.title}</CardTitle>
+              <CardTitle className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-text to-text2 bg-clip-text text-transparent">
+                {t.contact.title}
+              </CardTitle>
               <p className="text-text2 text-base md:text-lg leading-relaxed">
                 {t.contact.subtitle}
               </p>
