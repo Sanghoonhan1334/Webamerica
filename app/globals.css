@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-text antialiased;
+  }
+  /* 한국어 텍스트가 단어 중간에 끊기지 않도록 */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    word-break: keep-all;
+  }
+}
+
