@@ -121,22 +121,27 @@ export const translations = {
       steps: {
         planning: {
           label: "기획 상담",
+          description: "프로젝트 목표와 요구사항을 파악하고 전략을 수립합니다.",
           image: "/기획 상담.png",
         },
         design: {
           label: "흐름 설계",
+          description: "사용자 경험과 시스템 아키텍처를 설계합니다.",
           image: "/흐름 설계.png",
         },
         development: {
           label: "개발 진행",
+          description: "체계적인 개발 프로세스로 안정적인 제품을 구현합니다.",
           image: "/개발 진행.png",
         },
         test: {
           label: "테스트",
+          description: "품질 검증을 통해 완성도를 높입니다.",
           image: "/테스트.png",
         },
         launch: {
           label: "런칭 완료",
+          description: "성공적인 런칭과 지속적인 사후 관리를 제공합니다.",
           image: "/런칭 완료.png",
         },
       },
@@ -298,22 +303,27 @@ export const translations = {
       steps: {
         planning: {
           label: "Consultoría de Planificación",
+          description: "Comprendemos los objetivos y requisitos del proyecto para establecer estrategias.",
           image: "/기획 상담.png",
         },
         design: {
           label: "Diseño de Flujo",
+          description: "Diseñamos la experiencia del usuario y la arquitectura del sistema.",
           image: "/흐름 설계.png",
         },
         development: {
           label: "Desarrollo en Progreso",
+          description: "Implementamos productos estables mediante un proceso de desarrollo sistemático.",
           image: "/개발 진행.png",
         },
         test: {
           label: "Pruebas",
+          description: "Mejoramos la calidad mediante verificación de calidad.",
           image: "/테스트.png",
         },
         launch: {
           label: "Lanzamiento Completado",
+          description: "Proporcionamos un lanzamiento exitoso y gestión post-lanzamiento continua.",
           image: "/런칭 완료.png",
         },
       },
@@ -475,22 +485,27 @@ export const translations = {
       steps: {
         planning: {
           label: "Planning Consultation",
+          description: "We understand project goals and requirements to establish strategies.",
           image: "/기획 상담.png",
         },
         design: {
           label: "Flow Design",
+          description: "We design user experience and system architecture.",
           image: "/흐름 설계.png",
         },
         development: {
           label: "Development in Progress",
+          description: "We implement stable products through systematic development processes.",
           image: "/개발 진행.png",
         },
         test: {
           label: "Test",
+          description: "We enhance quality through quality verification.",
           image: "/테스트.png",
         },
         launch: {
           label: "Launch Complete",
+          description: "We provide successful launch and continuous post-launch management.",
           image: "/런칭 완료.png",
         },
       },

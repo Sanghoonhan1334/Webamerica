@@ -6,11 +6,11 @@ export default function Process() {
   const { t } = useLanguage();
   
   const steps = [
-    { label: t.process.steps.planning.label, image: t.process.steps.planning.image },
-    { label: t.process.steps.design.label, image: t.process.steps.design.image },
-    { label: t.process.steps.development.label, image: t.process.steps.development.image },
-    { label: t.process.steps.test.label, image: t.process.steps.test.image },
-    { label: t.process.steps.launch.label, image: t.process.steps.launch.image },
+    { label: t.process.steps.planning.label, description: t.process.steps.planning.description, image: t.process.steps.planning.image },
+    { label: t.process.steps.design.label, description: t.process.steps.design.description, image: t.process.steps.design.image },
+    { label: t.process.steps.development.label, description: t.process.steps.development.description, image: t.process.steps.development.image },
+    { label: t.process.steps.test.label, description: t.process.steps.test.description, image: t.process.steps.test.image },
+    { label: t.process.steps.launch.label, description: t.process.steps.launch.description, image: t.process.steps.launch.image },
   ];
   return (
     <section className="py-20 px-6 lg:px-12">
@@ -51,9 +51,10 @@ export default function Process() {
                 )}
               </div>
               
-              {/* Label */}
+              {/* Label and Description */}
               <div className="flex-1">
-                <h3 className="text-text text-xl md:text-2xl font-semibold">{step.label}</h3>
+                <h3 className="text-text text-xl md:text-2xl font-semibold mb-2">{step.label}</h3>
+                <p className="text-text2 text-sm md:text-base leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}
