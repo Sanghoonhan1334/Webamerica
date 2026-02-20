@@ -38,7 +38,12 @@ export default function ProfileSection({
 
               {/* Profile Info */}
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-text mb-2">{t.profile.name}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-text mb-2">
+                  {t.profile.name}
+                  {t.profile.nameEn && (
+                    <span className="text-text2 text-lg font-normal ml-2">({t.profile.nameEn})</span>
+                  )}
+                </h2>
                 <p className="text-accent text-lg mb-4">{t.profile.role}</p>
                 <p className="text-text2 mb-6 leading-relaxed">{t.profile.bio}</p>
 

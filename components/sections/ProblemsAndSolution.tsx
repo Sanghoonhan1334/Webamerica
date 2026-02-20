@@ -51,9 +51,7 @@ export default function ProblemsAndSolution() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
                 <div key={index} className="space-y-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-text text-lg font-semibold">{problem.title}</h3>
-                  </div>
+                  <h3 className="text-text text-lg font-semibold text-center mb-2">{problem.title}</h3>
                   <div className="w-full h-48 rounded-lg overflow-hidden bg-surface border border-white/10">
                     {problem.image ? (
                       <img
