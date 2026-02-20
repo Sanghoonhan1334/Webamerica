@@ -14,19 +14,22 @@ export default function TeamSection({ image }: TeamSectionProps) {
       name: t.team.members.frontend.name,
       role: t.team.members.frontend.role,
       experience: t.team.members.frontend.experience,
-      image,
+      image: t.team.members.frontend.image || image,
+      career: t.team.members.frontend.career,
     },
     {
       name: t.team.members.backend.name,
       role: t.team.members.backend.role,
       experience: t.team.members.backend.experience,
-      image,
+      image: t.team.members.backend.image || image,
+      career: t.team.members.backend.career,
     },
     {
       name: t.team.members.qa.name,
       role: t.team.members.qa.role,
       experience: t.team.members.qa.experience,
-      image,
+      image: t.team.members.qa.image || image,
+      career: t.team.members.qa.career,
     },
   ];
   return (
@@ -45,8 +48,8 @@ export default function TeamSection({ image }: TeamSectionProps) {
                 className="rounded-card bg-white/6 border border-white/10 backdrop-blur-md p-6 text-center"
                 style={{ boxShadow: "0 8px 30px rgba(0,0,0,0.45)" }}
               >
-                {/* Profile Image Placeholder */}
-                <div className="w-20 h-20 rounded-full bg-surface border-2 border-white/10 mx-auto mb-4 overflow-hidden">
+                {/* Profile Image */}
+                <div className="w-40 h-48 md:w-48 md:h-56 rounded-lg bg-surface border-2 border-white/10 mx-auto mb-4 overflow-hidden">
                   {member.image ? (
                     <img
                       src={member.image}
@@ -61,8 +64,11 @@ export default function TeamSection({ image }: TeamSectionProps) {
                 </div>
 
                 <h3 className="text-text font-semibold text-lg mb-1">{member.name}</h3>
-                <p className="text-accent text-sm mb-3">{member.role}</p>
-                <p className="text-text2 text-sm">{member.experience}</p>
+                <p className="text-accent text-sm mb-2">{member.role}</p>
+                <p className="text-text2 text-sm mb-2">{member.experience}</p>
+                {member.career && (
+                  <p className="text-text2 text-xs">{member.career}</p>
+                )}
               </div>
             ))}
           </div>

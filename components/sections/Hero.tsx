@@ -53,8 +53,12 @@ export default function Hero({
           {/* Brand Identity */}
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center shadow-lg shadow-accentGlow">
-                <span className="text-white font-bold text-2xl">A</span>
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden shadow-lg shadow-accentGlow">
+                <img
+                  src="/로고1.png"
+                  alt="Web America Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-text2 text-base font-medium tracking-wider uppercase">WEB AMERICA</span>

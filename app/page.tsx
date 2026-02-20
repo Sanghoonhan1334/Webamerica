@@ -28,7 +28,7 @@ export default function Home() {
         <ProblemsAndSolution />
         
         {/* 3. 대표 PM 소개 (프로필) */}
-        <ProfileSection />
+        <ProfileSection profileImage="/대표PM.jpg" />
         
         {/* 4. 글로벌 전문 파트너 팀 */}
         <TeamSection />

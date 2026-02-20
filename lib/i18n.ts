@@ -3,17 +3,28 @@ export type Language = "ko" | "es" | "en";
 export const translations = {
   ko: {
     hero: {
-      headline: "한국 감성을 이해하는 PM과 글로벌 개발팀이 함께 만드는 웹·앱",
+      headline: "한국인 PM과 글로벌 개발팀이 함께 만듭니다.",
       primaryButton: "프로젝트 문의하기",
       secondaryButton: "포트폴리오 보기 >",
     },
     problems: {
       title: "해외 외주 시 자주 겪는 문제",
       items: {
-        communication: "소통 문제",
-        misunderstanding: "요구사항 오해",
-        delay: "일정 지연",
-        schedule: "시차/스케쥴 충돌",
+        communication: {
+          title: "소통 문제",
+          description: "전미대륙에서 5년간 거주한 통역사 출신 PM이 해결합니다.",
+          image: "/소통문제.png",
+        },
+        delay: {
+          title: "일정 지연",
+          description: "한국인 PM의 리드와 오랜기간 함께한 팀원들로, 일정 지연없이 진행합니다.",
+          image: "/일정지연.png",
+        },
+        support: {
+          title: "사후관리",
+          description: "현지 외주=사후관리 걱정 국내 사업자 등록된 업체로 안전한 사후관리가 가능합니다.",
+          image: "/사후관리.png",
+        },
       },
     },
     solution: {
@@ -26,15 +37,16 @@ export const translations = {
       },
     },
     profile: {
-      title: "대표 PM 소개",
+      title: "대표 PM",
       name: "대표 PM",
       role: "Founder & Product Manager",
-      bio: "스타트업 창업자 출신으로, 초기 단계의 부담과 어려움을 직접 경험했습니다. 개발이 막막했던 경험에서 시작된 이 PM 모델을 통해, 같은 고민을 하는 창업자들을 돕고자 합니다.",
+      bio: "스타트업 창업자 출신으로, 창업 초기, 해외 진출 단계의 어려움을 직접 경험했습니다. 이러한 경험에서 시작된 웹아메리카는 같은 고민을 하는 창업자들을 돕고자 합니다.",
       experiences: [
-        "스타트업 창업 경험",
-        "풀스택 프로젝트 참여 경험",
-        "글로벌 개발팀 협업",
-        "스페인어 커뮤니케이션 가능",
+        "중남미 커뮤니티 플랫폼 CTO",
+        "글로벌 개발팀 웹아메리카 PM",
+        "국내 수출 기업 전미 주재원 5년",
+        "프리랜서 스페인어 통역사 4년",
+        "앱 개발 및 홈페이지 다수 개발",
       ],
     },
     contact: {
@@ -81,35 +93,56 @@ export const translations = {
       subtitle: "검증된 전문가들과 함께합니다",
       members: {
         frontend: {
-          name: "Frontend Developer",
+          name: "마리아",
           role: "Frontend",
           experience: "React, Next.js 전문 개발",
+          image: "/마리아.png",
+          career: "5년 이상 프론트엔드 개발 경력",
         },
         backend: {
-          name: "Backend Developer",
+          name: "호르헤",
           role: "Backend",
           experience: "Node.js, Python 기반 API 개발",
+          image: "/호르헤.png",
+          career: "5년 이상 백엔드 개발 경력",
         },
         qa: {
-          name: "QA Engineer",
+          name: "안드레스",
           role: "QA",
           experience: "자동화 테스트 및 품질 관리",
+          image: "/안드레스.png",
+          career: "3년 이상 QA 경력",
         },
       },
     },
     process: {
       title: "진행 프로세스",
       steps: {
-        planning: "기획 상담",
-        design: "흐름 설계",
-        development: "개발 진행",
-        test: "테스트",
-        launch: "런칭 완료",
+        planning: {
+          label: "기획 상담",
+          image: "/기획 상담.png",
+        },
+        design: {
+          label: "흐름 설계",
+          image: "/흐름 설계.png",
+        },
+        development: {
+          label: "개발 진행",
+          image: "/개발 진행.png",
+        },
+        test: {
+          label: "테스트",
+          image: "/테스트.png",
+        },
+        launch: {
+          label: "런칭 완료",
+          image: "/런칭 완료.png",
+        },
       },
     },
     portfolio: {
-      title: "포트폴리오",
-      subtitle: "다양한 산업과 시장에서 검증된 프로젝트 경험을 보유하고 있습니다.",
+      title: "어떤 프로젝트를 시작하시나요?",
+      subtitle: "다양한 산업과 시장에서 검증된 프로젝트를 확인하세요",
       items: {
         corporate: {
           title: "글로벌 기업 홈페이지",
@@ -146,17 +179,28 @@ export const translations = {
   },
   es: {
     hero: {
-      headline: "Aplicaciones web creadas por un PM que entiende la sensibilidad coreana y un equipo de desarrollo global",
+      headline: "Un PM coreano y un equipo de desarrollo global trabajan juntos.",
       primaryButton: "Consultar Proyecto",
       secondaryButton: "Ver Portafolio >",
     },
     problems: {
       title: "Problemas comunes en outsourcing internacional",
       items: {
-        communication: "Problemas de comunicación",
-        misunderstanding: "Malentendidos de requisitos",
-        delay: "Retrasos en el cronograma",
-        schedule: "Conflictos de zona horaria/horario",
+        communication: {
+          title: "Problemas de comunicación",
+          description: "Un PM ex intérprete que ha residido en las Américas durante 5 años lo resuelve.",
+          image: "/소통문제.png",
+        },
+        delay: {
+          title: "Retrasos en el cronograma",
+          description: "Con el liderazgo del PM coreano y miembros del equipo que han trabajado juntos durante mucho tiempo, avanzamos sin retrasos en el cronograma.",
+          image: "/일정지연.png",
+        },
+        support: {
+          title: "Soporte post-lanzamiento",
+          description: "Outsourcing local = preocupación por el soporte post-lanzamiento. Empresa registrada en el país para un soporte post-lanzamiento seguro.",
+          image: "/사후관리.png",
+        },
       },
     },
     solution: {
@@ -169,15 +213,16 @@ export const translations = {
       },
     },
     profile: {
-      title: "Introducción del PM Representativo",
+      title: "PM Representativo",
       name: "PM Representativo",
       role: "Fundador y Gerente de Producto",
-      bio: "Como fundador de una startup, he experimentado directamente las cargas y dificultades de las etapas iniciales. A través de este modelo PM que comenzó con la experiencia de desarrollo abrumador, quiero ayudar a los emprendedores con las mismas preocupaciones.",
+      bio: "Como fundador de una startup, he experimentado directamente las dificultades de las etapas iniciales y la expansión internacional. Web America, que comenzó con estas experiencias, quiere ayudar a los emprendedores con las mismas preocupaciones.",
       experiences: [
-        "Experiencia en fundación de startup",
-        "Experiencia en proyectos full-stack",
-        "Colaboración con equipo de desarrollo global",
-        "Comunicación en español posible",
+        "CTO de plataforma comunitaria de América Latina",
+        "PM de Web America, equipo de desarrollo global",
+        "Residente de empresa exportadora coreana en las Américas durante 5 años",
+        "Intérprete de español freelance durante 4 años",
+        "Desarrollo de múltiples aplicaciones y sitios web",
       ],
     },
     contact: {
@@ -224,35 +269,56 @@ export const translations = {
       subtitle: "Trabajamos con expertos verificados",
       members: {
         frontend: {
-          name: "Frontend Developer",
+          name: "María",
           role: "Frontend",
           experience: "Desarrollo especializado en React, Next.js",
+          image: "/마리아.png",
+          career: "Más de 5 años de experiencia en desarrollo frontend",
         },
         backend: {
-          name: "Backend Developer",
+          name: "Jorge",
           role: "Backend",
           experience: "Desarrollo de API basado en Node.js, Python",
+          image: "/호르헤.png",
+          career: "Más de 5 años de experiencia en desarrollo backend",
         },
         qa: {
-          name: "QA Engineer",
+          name: "Andrés",
           role: "QA",
           experience: "Pruebas automatizadas y gestión de calidad",
+          image: "/안드레스.png",
+          career: "Más de 3 años de experiencia en QA",
         },
       },
     },
     process: {
       title: "Proceso de Desarrollo",
       steps: {
-        planning: "Consultoría de Planificación",
-        design: "Diseño de Flujo",
-        development: "Desarrollo en Progreso",
-        test: "Pruebas",
-        launch: "Lanzamiento Completado",
+        planning: {
+          label: "Consultoría de Planificación",
+          image: "/기획 상담.png",
+        },
+        design: {
+          label: "Diseño de Flujo",
+          image: "/흐름 설계.png",
+        },
+        development: {
+          label: "Desarrollo en Progreso",
+          image: "/개발 진행.png",
+        },
+        test: {
+          label: "Pruebas",
+          image: "/테스트.png",
+        },
+        launch: {
+          label: "Lanzamiento Completado",
+          image: "/런칭 완료.png",
+        },
       },
     },
     portfolio: {
-      title: "Portafolio",
-      subtitle: "Tenemos experiencia en proyectos verificados en diversas industrias y mercados.",
+      title: "¿Qué proyecto va a iniciar?",
+      subtitle: "Consulte proyectos verificados en diversas industrias y mercados",
       items: {
         corporate: {
           title: "Página Web Corporativa Global",
@@ -289,17 +355,28 @@ export const translations = {
   },
   en: {
     hero: {
-      headline: "Web apps created by a PM who understands Korean sensibility and a global development team",
+      headline: "A Korean PM and a global development team work together.",
       primaryButton: "Inquire Project",
       secondaryButton: "View Portfolio >",
     },
     problems: {
       title: "Common problems in international outsourcing",
       items: {
-        communication: "Communication issues",
-        misunderstanding: "Requirement misunderstandings",
-        delay: "Schedule delays",
-        schedule: "Time zone/schedule conflicts",
+        communication: {
+          title: "Communication issues",
+          description: "A former interpreter PM who has resided in the Americas for 5 years solves it.",
+          image: "/소통문제.png",
+        },
+        delay: {
+          title: "Schedule delays",
+          description: "With the leadership of a Korean PM and team members who have worked together for a long time, we proceed without schedule delays.",
+          image: "/일정지연.png",
+        },
+        support: {
+          title: "Post-launch support",
+          description: "Local outsourcing = post-launch support concerns. Domestically registered company for safe post-launch support.",
+          image: "/사후관리.png",
+        },
       },
     },
     solution: {
@@ -312,15 +389,16 @@ export const translations = {
       },
     },
     profile: {
-      title: "Representative PM Introduction",
+      title: "Representative PM",
       name: "Representative PM",
       role: "Founder & Product Manager",
-      bio: "As a startup founder, I have directly experienced the burdens and difficulties of the initial stages. Through this PM model that started from the overwhelming development experience, I want to help entrepreneurs with the same concerns.",
+      bio: "As a startup founder, I have directly experienced the difficulties of the initial stages and international expansion. Web America, which started from these experiences, wants to help entrepreneurs with the same concerns.",
       experiences: [
-        "Startup founding experience",
-        "Full-stack project participation experience",
-        "Global development team collaboration",
-        "Spanish communication possible",
+        "CTO of Latin American community platform",
+        "PM of Web America, global development team",
+        "Resident of Korean export company in the Americas for 5 years",
+        "Freelance Spanish interpreter for 4 years",
+        "Development of multiple apps and websites",
       ],
     },
     contact: {
@@ -367,35 +445,56 @@ export const translations = {
       subtitle: "We work with verified experts",
       members: {
         frontend: {
-          name: "Frontend Developer",
+          name: "María",
           role: "Frontend",
           experience: "Specialized development in React, Next.js",
+          image: "/마리아.png",
+          career: "Over 5 years of frontend development experience",
         },
         backend: {
-          name: "Backend Developer",
+          name: "Jorge",
           role: "Backend",
           experience: "Node.js, Python-based API development",
+          image: "/호르헤.png",
+          career: "Over 5 years of backend development experience",
         },
         qa: {
-          name: "QA Engineer",
+          name: "Andrés",
           role: "QA",
           experience: "Automated testing and quality management",
+          image: "/안드레스.png",
+          career: "Over 3 years of QA experience",
         },
       },
     },
     process: {
       title: "Development Process",
       steps: {
-        planning: "Planning Consultation",
-        design: "Flow Design",
-        development: "Development in Progress",
-        test: "Test",
-        launch: "Launch Complete",
+        planning: {
+          label: "Planning Consultation",
+          image: "/기획 상담.png",
+        },
+        design: {
+          label: "Flow Design",
+          image: "/흐름 설계.png",
+        },
+        development: {
+          label: "Development in Progress",
+          image: "/개발 진행.png",
+        },
+        test: {
+          label: "Test",
+          image: "/테스트.png",
+        },
+        launch: {
+          label: "Launch Complete",
+          image: "/런칭 완료.png",
+        },
       },
     },
     portfolio: {
-      title: "Portfolio",
-      subtitle: "We have experience in verified projects across various industries and markets.",
+      title: "What project are you starting?",
+      subtitle: "Check out verified projects across various industries and markets",
       items: {
         corporate: {
           title: "Global Corporate Homepage",
