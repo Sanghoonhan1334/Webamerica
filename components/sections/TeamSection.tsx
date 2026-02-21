@@ -72,6 +72,15 @@ export default function TeamSection({ image }: TeamSectionProps) {
               </div>
             ))}
           </div>
+          
+          {/* Additional Note */}
+          {t.team.additionalNote && (
+            <div className="mt-12 max-w-3xl mx-auto">
+              <p className="text-text2 text-base md:text-lg leading-relaxed text-center">
+                {t.team.additionalNote}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

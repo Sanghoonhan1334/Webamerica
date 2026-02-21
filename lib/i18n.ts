@@ -92,6 +92,7 @@ export const translations = {
     team: {
       title: "글로벌 전문 파트너 팀",
       subtitle: "검증된 전문가들과 함께합니다",
+      additionalNote: "웹 개발은 우리가 수행하는 프로젝트 중 가장 기본적인 영역입니다. 실제로는 금융 시스템, 마켓플레이스, AI 기반 서비스 등 더 복잡한 구조의 제품을 설계하고 개발해온 팀입니다.",
       members: {
         frontend: {
           name: "마리아",
@@ -115,6 +116,18 @@ export const translations = {
           career: "Jorge Cuauro",
         },
       },
+    },
+    howWeOperate: {
+      title: "우리는 이렇게 운영합니다",
+      items: [
+        "고정 인건비 중심의 조직이 아닌, 프로젝트 중심의 유연한 구조",
+        "한국 PM과 글로벌 개발팀이 직접 협업하는 체계",
+        "개발팀과 바로 연결되는 구조",
+        "불필요한 에이전시 마진을 최소화",
+      ],
+      resultTitle: "그 결과,",
+      resultDescription: "한국 내 동일 수준의 프로젝트 대비 불필요한 중간 비용 없이 보다 효율적인 예산으로 제안드립니다.",
+      note: "※ 프로젝트 범위와 난이도에 따라 달라질 수 있습니다.",
     },
     process: {
       title: "진행 프로세스",
@@ -179,6 +192,104 @@ export const translations = {
           title: "모바일 앱 개발",
           description: "React Native 기반 크로스 플랫폼 앱 개발",
           category: "모바일 앱",
+        },
+      },
+    },
+    businessExpansion: {
+      title: "웹 제작을 넘어, 비즈니스 확장을 설계합니다.",
+      description1: "우리는 단순한 홈페이지 제작팀이 아닙니다.",
+      description2: "MVP 웹부터 기업용 시스템, AI 기반 서비스까지 확장 가능한 구조로 설계합니다.",
+    },
+    capabilities: {
+      title: "개발 역량",
+      levels: [
+        {
+          level: 1,
+          title: "Level 1 — 기본 구축",
+          subtitle: "기업 웹·앱 수준",
+          description: "안정적인 온라인 존재감을 구축합니다",
+          items: [
+            {
+              title: "웹 & 앱 개발",
+              description: "회사 홈페이지부터 서비스 플랫폼까지, 사용자가 접하는 모든 화면을 제작합니다",
+            },
+            {
+              title: "다국어 글로벌 구조 설계",
+              description: "한국·북미·중남미 시장을 동시에 고려한 서비스로, 한 번의 구축으로 여러 시장에 진출할 수 있습니다",
+            },
+          ],
+        },
+        {
+          level: 2,
+          title: "Level 2 — 플랫폼 구조",
+          subtitle: "회원·결제·수익 구조 포함",
+          description: "사용자와 수익을 관리하는 비즈니스 플랫폼을 구축합니다",
+          items: [
+            {
+              title: "백엔드 및 API 설계",
+              description: "회원 관리, 결제 처리, 데이터 저장 등 비즈니스 로직을 안전하게 처리하는 시스템을 설계합니다",
+            },
+            {
+              title: "마켓플레이스 구축",
+              description: "판매자와 구매자가 함께 거래할 수 있는 플랫폼을 구축하여, 중개 수수료 등 새로운 수익 모델을 만들 수 있습니다",
+            },
+          ],
+        },
+        {
+          level: 3,
+          title: "Level 3 — 고난도 시스템",
+          subtitle: "AI·금융·자동화·블록체인 등",
+          description: "차별화된 경쟁력을 만드는 고도화된 시스템을 구축합니다",
+          items: [
+            {
+              title: "AI 에이전트 구축",
+              description: "24시간 자동 상담과 업무 처리가 가능한 AI 시스템으로, 인력 비용을 절감하고 서비스 품질을 향상시킵니다",
+            },
+            {
+              title: "AI API 연동 서비스",
+              description: "ChatGPT 등 최신 AI 기능을 서비스에 연결하여, 고객에게 차별화된 경험을 제공합니다",
+            },
+            {
+              title: "금융·정산 시스템",
+              description: "결제, 수익 분배, 급여 관리까지 자동화하여, 복잡한 금융 거래를 안전하고 효율적으로 처리합니다",
+            },
+            {
+              title: "블록체인 및 크립토 지갑",
+              description: "디지털 자산을 안전하게 관리할 수 있는 시스템으로, 새로운 비즈니스 모델을 실현합니다",
+            },
+            {
+              title: "자동화 봇 개발",
+              description: "반복적인 업무를 자동화하여 인력 효율을 극대화하고, 팀이 더 중요한 일에 집중할 수 있게 합니다",
+            },
+          ],
+        },
+      ],
+    },
+    team: {
+      title: "글로벌 전문 파트너 팀",
+      subtitle: "검증된 전문가들과 함께합니다",
+      additionalNote: "웹 개발은 우리가 수행하는 프로젝트 중 가장 기본적인 영역입니다. 실제로는 금융 시스템, 마켓플레이스, AI 기반 서비스 등 더 복잡한 구조의 제품을 설계하고 개발해온 팀입니다.",
+      members: {
+        frontend: {
+          name: "마리아",
+          role: "프로젝트 및 프로세스 매니저",
+          experience: "프로젝트 관리 및 프로세스 최적화 전문",
+          image: "/마리아.png",
+          career: "María E. Arévalo L.",
+        },
+        backend: {
+          name: "안드레스",
+          role: "풀스택 기술 리더",
+          experience: "풀스택 개발 및 기술 리더십",
+          image: "/안드레스.png",
+          career: "Andrés Dominguez",
+        },
+        qa: {
+          name: "호르헤",
+          role: "BI 개발자",
+          experience: "비즈니스 인텔리전스 및 데이터 분석",
+          image: "/호르헤.png",
+          career: "Jorge Cuauro",
         },
       },
     },
@@ -271,9 +382,80 @@ export const translations = {
         message: "Por favor, inténtalo de nuevo o contáctanos directamente.",
       },
     },
+    businessExpansion: {
+      title: "Más allá de la creación web, diseñamos la expansión empresarial.",
+      description1: "No somos simplemente un equipo de creación de páginas web.",
+      description2: "Diseñamos estructuras escalables desde MVP web hasta sistemas empresariales y servicios basados en IA.",
+    },
+    capabilities: {
+      title: "Capacidades de Desarrollo",
+      levels: [
+        {
+          level: 1,
+          title: "Nivel 1 — Construcción Básica",
+          subtitle: "Nivel de web y app empresarial",
+          description: "Construimos una presencia online estable",
+          items: [
+            {
+              title: "Desarrollo Web y de Apps",
+              description: "Desde páginas web corporativas hasta plataformas de servicios, creamos todas las interfaces que los usuarios encuentran",
+            },
+            {
+              title: "Diseño de Estructura Global Multilingüe",
+              description: "Servicio que considera simultáneamente los mercados de Corea, América del Norte y América Latina, permitiendo ingresar a múltiples mercados con una sola construcción",
+            },
+          ],
+        },
+        {
+          level: 2,
+          title: "Nivel 2 — Estructura de Plataforma",
+          subtitle: "Incluye estructura de miembros, pagos y ingresos",
+          description: "Construimos plataformas de negocio que gestionan usuarios e ingresos",
+          items: [
+            {
+              title: "Diseño de Backend y API",
+              description: "Diseñamos sistemas que procesan de manera segura la lógica de negocio como gestión de miembros, procesamiento de pagos y almacenamiento de datos",
+            },
+            {
+              title: "Construcción de Marketplace",
+              description: "Construimos plataformas donde vendedores y compradores pueden realizar transacciones juntos, creando nuevos modelos de ingresos como comisiones de intermediación",
+            },
+          ],
+        },
+        {
+          level: 3,
+          title: "Nivel 3 — Sistemas de Alta Complejidad",
+          subtitle: "IA, finanzas, automatización, blockchain, etc.",
+          description: "Construimos sistemas avanzados que crean ventajas competitivas diferenciadas",
+          items: [
+            {
+              title: "Construcción de Agentes de IA",
+              description: "Sistema de IA que permite consultas y procesamiento de trabajo automático 24 horas, reduciendo costos de personal y mejorando la calidad del servicio",
+            },
+            {
+              title: "Servicios de Integración de API de IA",
+              description: "Conectamos funciones de IA de última generación como ChatGPT al servicio, proporcionando experiencias diferenciadas a los clientes",
+            },
+            {
+              title: "Sistemas Financieros y de Liquidación",
+              description: "Automatizamos desde pagos hasta distribución de ingresos y gestión de nómina, procesando transacciones financieras complejas de manera segura y eficiente",
+            },
+            {
+              title: "Blockchain y Billetera Cripto",
+              description: "Sistema que permite gestionar activos digitales de manera segura, realizando nuevos modelos de negocio",
+            },
+            {
+              title: "Desarrollo de Bots de Automatización",
+              description: "Automatizamos trabajos repetitivos para maximizar la eficiencia del personal, permitiendo que el equipo se concentre en tareas más importantes",
+            },
+          ],
+        },
+      ],
+    },
     team: {
       title: "Equipo de Socios Expertos Globales",
       subtitle: "Trabajamos con expertos verificados",
+      additionalNote: "El desarrollo web es el área más básica entre los proyectos que realizamos. En realidad, somos un equipo que ha diseñado y desarrollado productos de estructuras más complejas como sistemas financieros, marketplaces y servicios basados en IA.",
       members: {
         frontend: {
           name: "María",
@@ -297,6 +479,18 @@ export const translations = {
           career: "Jorge Cuauro",
         },
       },
+    },
+    howWeOperate: {
+      title: "Así es como operamos",
+      items: [
+        "Estructura flexible centrada en proyectos, no en una organización centrada en costos fijos de personal",
+        "Sistema de colaboración directa entre PM coreano y equipo de desarrollo global",
+        "Estructura conectada directamente con el equipo de desarrollo",
+        "Minimización de márgenes de agencia innecesarios",
+      ],
+      resultTitle: "Como resultado,",
+      resultDescription: "Proponemos un presupuesto más eficiente sin costos intermedios innecesarios en comparación con proyectos del mismo nivel en Corea.",
+      note: "※ Puede variar según el alcance y la dificultad del proyecto.",
     },
     process: {
       title: "Proceso de Desarrollo",
@@ -453,9 +647,80 @@ export const translations = {
         message: "Please try again or contact us directly.",
       },
     },
+    businessExpansion: {
+      title: "Beyond web creation, we design business expansion.",
+      description1: "We are not simply a website creation team.",
+      description2: "We design scalable structures from MVP web to enterprise systems and AI-based services.",
+    },
+    capabilities: {
+      title: "Development Capabilities",
+      levels: [
+        {
+          level: 1,
+          title: "Level 1 — Basic Construction",
+          subtitle: "Enterprise web and app level",
+          description: "We build a stable online presence",
+          items: [
+            {
+              title: "Web & App Development",
+              description: "From corporate websites to service platforms, we create all interfaces that users encounter",
+            },
+            {
+              title: "Multilingual Global Structure Design",
+              description: "Service that simultaneously considers Korean, North American, and Latin American markets, allowing entry into multiple markets with a single build",
+            },
+          ],
+        },
+        {
+          level: 2,
+          title: "Level 2 — Platform Structure",
+          subtitle: "Includes member, payment, and revenue structure",
+          description: "We build business platforms that manage users and revenue",
+          items: [
+            {
+              title: "Backend and API Design",
+              description: "We design systems that securely process business logic such as member management, payment processing, and data storage",
+            },
+            {
+              title: "Marketplace Construction",
+              description: "We build platforms where sellers and buyers can transact together, creating new revenue models such as intermediary commissions",
+            },
+          ],
+        },
+        {
+          level: 3,
+          title: "Level 3 — High-Complexity Systems",
+          subtitle: "AI, finance, automation, blockchain, etc.",
+          description: "We build advanced systems that create differentiated competitive advantages",
+          items: [
+            {
+              title: "AI Agent Construction",
+              description: "AI system that enables 24-hour automated consultation and work processing, reducing personnel costs and improving service quality",
+            },
+            {
+              title: "AI API Integration Services",
+              description: "We connect cutting-edge AI functions like ChatGPT to services, providing differentiated experiences to customers",
+            },
+            {
+              title: "Financial and Settlement Systems",
+              description: "We automate everything from payments to revenue distribution and payroll management, processing complex financial transactions securely and efficiently",
+            },
+            {
+              title: "Blockchain and Crypto Wallet",
+              description: "System that enables secure management of digital assets, realizing new business models",
+            },
+            {
+              title: "Automation Bot Development",
+              description: "We automate repetitive tasks to maximize personnel efficiency, allowing the team to focus on more important work",
+            },
+          ],
+        },
+      ],
+    },
     team: {
       title: "Global Expert Partner Team",
       subtitle: "We work with verified experts",
+      additionalNote: "Web development is the most basic area among the projects we undertake. In reality, we are a team that has designed and developed products with more complex structures such as financial systems, marketplaces, and AI-based services.",
       members: {
         frontend: {
           name: "María",
@@ -479,6 +744,18 @@ export const translations = {
           career: "Jorge Cuauro",
         },
       },
+    },
+    howWeOperate: {
+      title: "How We Operate",
+      items: [
+        "Flexible project-centered structure, not a fixed personnel cost-centered organization",
+        "System of direct collaboration between Korean PM and global development team",
+        "Structure directly connected to the development team",
+        "Minimizing unnecessary agency margins",
+      ],
+      resultTitle: "As a result,",
+      resultDescription: "We propose a more efficient budget without unnecessary intermediate costs compared to projects of the same level in Korea.",
+      note: "※ May vary depending on project scope and difficulty.",
     },
     process: {
       title: "Development Process",
