@@ -265,34 +265,6 @@ export const translations = {
         },
       ],
     },
-    team: {
-      title: "글로벌 전문 파트너 팀",
-      subtitle: "검증된 전문가들과 함께합니다",
-      additionalNote: "웹 개발은 우리가 수행하는 프로젝트 중 가장 기본적인 영역입니다. 실제로는 금융 시스템, 마켓플레이스, AI 기반 서비스 등 더 복잡한 구조의 제품을 설계하고 개발해온 팀입니다.",
-      members: {
-        frontend: {
-          name: "마리아",
-          role: "프로젝트 및 프로세스 매니저",
-          experience: "프로젝트 관리 및 프로세스 최적화 전문",
-          image: "/마리아.png",
-          career: "María E. Arévalo L.",
-        },
-        backend: {
-          name: "안드레스",
-          role: "풀스택 기술 리더",
-          experience: "풀스택 개발 및 기술 리더십",
-          image: "/안드레스.png",
-          career: "Andrés Dominguez",
-        },
-        qa: {
-          name: "호르헤",
-          role: "BI 개발자",
-          experience: "비즈니스 인텔리전스 및 데이터 분석",
-          image: "/호르헤.png",
-          career: "Jorge Cuauro",
-        },
-      },
-    },
   },
   es: {
     hero: {
