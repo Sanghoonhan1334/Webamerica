@@ -81,8 +81,9 @@ export const translations = {
       submitButton: "무료 전략 상담 신청하기 >",
       submitting: "제출 중...",
       success: {
-        title: "문의가 성공적으로 전송되었습니다!",
-        message: "빠른 시일 내에 연락드리겠습니다.",
+        title: "문의 보내기 성공",
+        message: "접수되었습니다. 빠른 시일 내에 연락드리겠습니다.",
+        confirmButton: "확인",
       },
       error: {
         title: "오류가 발생했습니다",
@@ -347,7 +348,8 @@ export const translations = {
       submitting: "Enviando...",
       success: {
         title: "¡Consulta enviada con éxito!",
-        message: "Nos pondremos en contacto contigo pronto.",
+        message: "Recibida. Nos pondremos en contacto contigo pronto.",
+        confirmButton: "Aceptar",
       },
       error: {
         title: "Ocurrió un error",
@@ -611,8 +613,9 @@ export const translations = {
       submitButton: "Request Free Strategic Consultation >",
       submitting: "Submitting...",
       success: {
-        title: "Inquiry sent successfully!",
-        message: "We will contact you soon.",
+        title: "Inquiry sent successfully",
+        message: "Received. We will contact you soon.",
+        confirmButton: "OK",
       },
       error: {
         title: "An error occurred",

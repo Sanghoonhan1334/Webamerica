@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { Resend } from 'resend';
 
 // 환경 변수는 함수 내에서 확인 (안전하게 처리)
 function getSupabaseClient() {
@@ -108,7 +109,43 @@ export async function POST(request: NextRequest) {
 
     console.log('Successfully inserted inquiry:', data);
 
-    // 성공 응답 (이메일 발송은 나중에 추가)
+    // 알림 이메일 발송 (Resend) — 환경 변수 있을 때만
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const notifyEmail = process.env.NOTIFY_EMAIL;
+    if (resendApiKey && notifyEmail) {
+      console.log('📧 알림 이메일 발송 시도 →', notifyEmail.replace(/(.{2}).*(@.*)/, '$1***$2'));
+      const resend = new Resend(resendApiKey);
+      const createdAt = data?.created_at
+        ? new Date(data.created_at).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
+        : new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
+      const subject = `[웹아메리카] 새 문의: ${market}/${stage} - ${name}`;
+      const html = `
+        <h2>새 문의가 접수되었습니다</h2>
+        <ul>
+          <li><strong>이름</strong>: ${name}</li>
+          <li><strong>이메일</strong>: ${email}</li>
+          <li><strong>시장</strong>: ${market}</li>
+          <li><strong>단계</strong>: ${stage}</li>
+          <li><strong>요약</strong>:<br/><pre style="white-space:pre-wrap;font-family:inherit;">${description}</pre></li>
+          <li><strong>제출 시각</strong>: ${createdAt}</li>
+        </ul>
+      `;
+      const { data: emailData, error: emailError } = await resend.emails.send({
+        from: process.env.RESEND_FROM ?? '웹아메리카 <onboarding@resend.dev>',
+        to: [notifyEmail],
+        subject,
+        html,
+      });
+      if (emailError) {
+        console.error('❌ 알림 이메일 발송 실패:', JSON.stringify(emailError, null, 2));
+      } else {
+        console.log('✅ 알림 이메일 발송 완료, id:', emailData?.id);
+      }
+    } else {
+      if (!resendApiKey) console.warn('⚠️ RESEND_API_KEY 미설정 — 알림 이메일 미발송');
+      if (!notifyEmail) console.warn('⚠️ NOTIFY_EMAIL 미설정 — 알림 이메일 미발송');
+    }
+
     return NextResponse.json(
       { 
         success: true, 

@@ -26,18 +26,30 @@
 
 ## 2. 환경 변수 확인
 
-`.env.local` 파일에 다음 변수가 설정되어 있는지 확인:
+`.env.local` (또는 `.env`) 파일에 다음 변수가 설정되어 있는지 확인:
 
 ```env
+# Supabase (문의 저장)
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+
+# Resend (문의 시 구글 메일 알림)
+RESEND_API_KEY=re_xxxxxxxx
+NOTIFY_EMAIL=your@gmail.com
 ```
 
 **참고**: 
 - `NEXT_PUBLIC_SUPABASE_URL`과 `NEXT_PUBLIC_SUPABASE_ANON_KEY`는 Supabase 대시보드 > Settings > API에서 확인
 - **Service Role Key는 필요 없습니다** (Anon Key만 사용)
+- **이메일 알림**: [Resend](https://resend.com) 가입 후 API Keys에서 `RESEND_API_KEY` 발급. `NOTIFY_EMAIL`에는 알림을 받을 Gmail 주소를 넣으면 됩니다. 테스트 시에는 발신자로 `onboarding@resend.dev`가 사용되며, 프로덕션에서는 Resend에서 도메인 인증 후 `RESEND_FROM`(예: `웹아메리카 <noreply@yourdomain.com>`)으로 설정할 수 있습니다.
 
-## 3. 개발 서버 실행 및 테스트
+## 3. Resend 패키지 설치 (이메일 알림 사용 시)
+
+```bash
+npm install resend
+```
+
+## 4. 개발 서버 실행 및 테스트
 
 ```bash
 npm run dev
@@ -49,7 +61,7 @@ npm run dev
 2. 폼을 작성하고 제출
 3. Supabase 대시보드 > Table Editor > `project_inquiries`에서 데이터 확인
 
-## 4. 문제 해결
+## 5. 문제 해결
 
 ### 에러: "relation 'project_inquiries' does not exist"
 - SQL 스크립트가 제대로 실행되지 않았습니다. `supabase-schema.sql`을 다시 실행하세요.

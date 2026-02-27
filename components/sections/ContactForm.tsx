@@ -73,17 +73,6 @@ export default function ContactForm({
       console.log('✅ 성공:', data);
 
       setSubmitStatus("success");
-      
-      // 성공 시 폼 초기화
-      setTimeout(() => {
-        setStep1Selected("");
-        setStep1Other("");
-        setStep2Selected("");
-        setStep3Description("");
-        setName("");
-        setEmail("");
-        setSubmitStatus("idle");
-      }, 3000);
 
     } catch (error) {
       console.error("Submit error:", error);
@@ -144,7 +133,7 @@ export default function ContactForm({
                 <h3 className="text-2xl md:text-3xl font-bold text-text mb-4">
                   {t.contact.success.title}
                 </h3>
-                <p className="text-text2 text-base md:text-lg mb-6">
+                <p className="text-text2 text-base md:text-lg mb-8">
                   {t.contact.success.message}
                 </p>
                 <Button
@@ -158,9 +147,10 @@ export default function ContactForm({
                     setSubmitStatus("idle");
                   }}
                   variant="outline"
-                  className="mt-4"
+                  size="lg"
+                  className="mt-2"
                 >
-                  새 문의 작성하기
+                  {t.contact.success.confirmButton}
                 </Button>
               </div>
             </Card>
