@@ -164,35 +164,35 @@ export const translations = {
       title: "어떤 프로젝트를 시작하시나요?",
       subtitle: "다양한 산업과 시장에서 검증된 프로젝트를 확인하세요",
       items: {
-        corporate: {
-          title: "글로벌 기업 홈페이지",
-          description: "북미 및 중남미 시장을 위한 다국어 홈페이지 개발",
-          category: "웹사이트",
+        amico: {
+          title: "중남미 시장을 선도할 글로벌 커뮤니티 웹앱 기획 및 개발 총괄",
+          description: "아미코 — 웹앱 기획·개발",
+          category: "앱·웹 기획",
         },
-        startup: {
-          title: "스타트업 앱 개발",
-          description: "초기 단계부터 MVP까지 전 과정 PM 및 개발 지원",
-          category: "앱 개발",
-        },
-        landing: {
-          title: "다국어 랜딩 페이지",
-          description: "한국어, 영어, 스페인어 지원 랜딩 페이지",
+        haeyun: {
+          title: "브랜드의 첫인상을 완성하는 뷰티 랜딩페이지 개발",
+          description: "해윤 — 랜딩페이지",
           category: "랜딩 페이지",
         },
-        ecommerce: {
-          title: "E-commerce 플랫폼",
-          description: "해외 진출을 위한 전자상거래 플랫폼 구축",
-          category: "E-commerce",
+        blockchain: {
+          title: "Web3 탈중앙화 거래소: 지갑 연동부터 실시간 트레이딩까지",
+          description: "블록체인·Web3 소프트웨어 개발",
+          category: "소프트웨어 개발",
         },
-        system: {
-          title: "기업용 관리 시스템",
-          description: "글로벌 팀 협업을 위한 관리 시스템 개발",
-          category: "시스템 개발",
+        kindergarten: {
+          title: "학부모 마음 사로잡는 프리미엄 유치원 감성 브랜딩 웹사이트",
+          description: "유치원 브랜딩 웹사이트",
+          category: "웹 개발",
         },
-        mobile: {
-          title: "모바일 앱 개발",
-          description: "React Native 기반 크로스 플랫폼 앱 개발",
-          category: "모바일 앱",
+        forum: {
+          title: "정치·시민 참여를 위한 반응형 온라인 포럼 플랫폼 구축 사례",
+          description: "시민 정치 참여 포럼",
+          category: "웹 개발",
+        },
+        winner: {
+          title: "사용자 중심의 반응형 웹 플랫폼, 핵심 기능으로 완성하다",
+          description: "당첨 사이트·웹 플랫폼",
+          category: "앱·웹 기획",
         },
       },
     },
@@ -500,35 +500,35 @@ export const translations = {
       title: "¿Qué proyecto va a iniciar?",
       subtitle: "Consulte proyectos verificados en diversas industrias y mercados",
       items: {
-        corporate: {
-          title: "Página Web Corporativa Global",
-          description: "Desarrollo de página web multilingüe para mercados de América del Norte y Central/Sur",
-          category: "Sitio Web",
+        amico: {
+          title: "Planificación y desarrollo de webapp de comunidad global para liderar el mercado latinoamericano",
+          description: "Amico — Webapp",
+          category: "Planificación App/Web",
         },
-        startup: {
-          title: "Desarrollo de App para Startup",
-          description: "Soporte completo de PM y desarrollo desde la etapa inicial hasta MVP",
-          category: "Desarrollo de App",
+        haeyun: {
+          title: "Desarrollo de landing page de belleza que completa la primera impresión de la marca",
+          description: "Haeyun — Landing page",
+          category: "Landing Page",
         },
-        landing: {
-          title: "Página de Aterrizaje Multilingüe",
-          description: "Página de aterrizaje que soporta coreano, inglés y español",
-          category: "Página de Aterrizaje",
+        blockchain: {
+          title: "Exchange descentralizado Web3: desde conexión de wallet hasta trading en tiempo real",
+          description: "Desarrollo de software blockchain·Web3",
+          category: "Desarrollo de Software",
         },
-        ecommerce: {
-          title: "Plataforma E-commerce",
-          description: "Construcción de plataforma de comercio electrónico para expansión internacional",
-          category: "E-commerce",
+        kindergarten: {
+          title: "Sitio web de branding emocional para jardín infantil premium",
+          description: "Sitio web de branding para jardín infantil",
+          category: "Desarrollo Web",
         },
-        system: {
-          title: "Sistema de Gestión Empresarial",
-          description: "Desarrollo de sistema de gestión para colaboración de equipos globales",
-          category: "Desarrollo de Sistema",
+        forum: {
+          title: "Plataforma de foro en línea responsive para participación política y ciudadana",
+          description: "Foro de participación política ciudadana",
+          category: "Desarrollo Web",
         },
-        mobile: {
-          title: "Desarrollo de App Móvil",
-          description: "Desarrollo de app multiplataforma basado en React Native",
-          category: "App Móvil",
+        winner: {
+          title: "Plataforma web responsive centrada en el usuario, completada con funciones clave",
+          description: "Sitio de ganadores·Plataforma web",
+          category: "Planificación App/Web",
         },
       },
     },
@@ -766,35 +766,35 @@ export const translations = {
       title: "What project are you starting?",
       subtitle: "Check out verified projects across various industries and markets",
       items: {
-        corporate: {
-          title: "Global Corporate Homepage",
-          description: "Multilingual homepage development for North American and Central/South American markets",
-          category: "Website",
+        amico: {
+          title: "Global community webapp planning and development leading the Latin American market",
+          description: "Amico — Webapp",
+          category: "App/Web Planning",
         },
-        startup: {
-          title: "Startup App Development",
-          description: "Full process PM and development support from initial stage to MVP",
-          category: "App Development",
-        },
-        landing: {
-          title: "Multilingual Landing Page",
-          description: "Landing page supporting Korean, English, and Spanish",
+        haeyun: {
+          title: "Beauty landing page development that completes the brand's first impression",
+          description: "Haeyun — Landing page",
           category: "Landing Page",
         },
-        ecommerce: {
-          title: "E-commerce Platform",
-          description: "E-commerce platform construction for international expansion",
-          category: "E-commerce",
+        blockchain: {
+          title: "Web3 decentralized exchange: from wallet integration to real-time trading",
+          description: "Blockchain·Web3 software development",
+          category: "Software Development",
         },
-        system: {
-          title: "Enterprise Management System",
-          description: "Management system development for global team collaboration",
-          category: "System Development",
+        kindergarten: {
+          title: "Premium kindergarten emotional branding website that captures parents' hearts",
+          description: "Kindergarten branding website",
+          category: "Web Development",
         },
-        mobile: {
-          title: "Mobile App Development",
-          description: "Cross-platform app development based on React Native",
-          category: "Mobile App",
+        forum: {
+          title: "Responsive online forum platform for political and civic participation",
+          description: "Civic political participation forum",
+          category: "Web Development",
+        },
+        winner: {
+          title: "User-centric responsive web platform, completed with core features",
+          description: "Winner site·Web platform",
+          category: "App/Web Planning",
         },
       },
     },
